@@ -1,4 +1,4 @@
-import { inputOut, randomInt, greetingInStart } from './functions.js';
+import { inputOut, randomInt, greetingInStart } from './index.js';
 
 const userName = greetingInStart();
 console.log('Answer "yes" if the number is even, otherwise answer "no".');
