@@ -1,4 +1,4 @@
-import { inputOut, randomInt, greetingInStart } from './index.js';
+import { inputOut, randomInt, greetingInStart } from '../src/index.js';
 
 const userName = greetingInStart();
 console.log('What is the result of the expression?');
