@@ -8,7 +8,7 @@ const inputOut = (question) => {
 const randomInt = (increase) => Math.floor(Math.random() * increase);
 
 const greetingInStart = () => {
-  const user = inputOut('May I have your name?');
+  const user = inputOut('May I have your name? ');
   console.log(`Hello, ${user}!`);
   return user;
 };
