@@ -1,19 +1,11 @@
-import * as readlineSync from 'readline-sync';
+import { inputOut, randomInt, greetingInStart } from './functions.js';
 
-const inputOut = (question) => {
-  const answer = readlineSync.question(question);
-  return answer;
-};
-
-const userName = inputOut('May I have your name?');
-console.log(`Hello, ${userName}!`);
+const userName = greetingInStart();
 console.log('Answer "yes" if the number is even, otherwise answer "no".');
-
-const randomInt = () => Math.floor(Math.random() * 100);
 
 const even = () => {
   for (let count = 1; count <= 3; count += 1) {
-    const question = randomInt();
+    const question = randomInt(100);
     const answer = inputOut(`Question: ${question}\nYour answer: `);
     let correctAnswer;
     if (question % 2 === 0) {
