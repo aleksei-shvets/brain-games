@@ -2,6 +2,7 @@ import { inputOut, randomInt, greetingInStart } from '../src/index.js';
 
 const gcd = () => {
   const userName = greetingInStart();
+  console.log('Find the greatest common divisor of given numbers.');
   for (let count = 1; count <= 3; count += 1) {
     const firstNumber = randomInt(60);
     const secondNumber = randomInt(50);
