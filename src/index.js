@@ -8,6 +8,7 @@ const inputOut = (question) => {
 const randomInt = (increase) => Math.floor(Math.random() * increase);
 
 const greetingInStart = () => {
+  console.log('Welcome to the Brain Games!');
   const user = inputOut('May I have your name? ');
   console.log(`Hello, ${user}!`);
   return user;
