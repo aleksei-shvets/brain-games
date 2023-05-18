@@ -10,3 +10,5 @@ https://asciinema.org/a/TC8xIJYnn2Mrzd58SroRnehw0
 ### asciinema-calc
 https://asciinema.org/a/3BIjIdSYAhHJbTNVHwmbQNHX4
 
+### asciinema-gcd
+https://asciinema.org/a/q2neYgSq3ZgOZCGK2nwNhzH8C
