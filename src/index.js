@@ -16,4 +16,6 @@ const greetingInStart = () => {
   return user;
 };
 
-export { inputOut, randomInt, greetingInStart, randomArreyIndex };
+export {
+  inputOut, randomInt, greetingInStart, randomArreyIndex,
+};
