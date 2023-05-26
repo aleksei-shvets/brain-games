@@ -26,7 +26,7 @@ const calc = () => {
       default:
         break;
     }
-    const questionLine = `${firstNumber}${operator}${secondNumber}`;
+    const questionLine = `${firstNumber} ${operator} ${secondNumber}`;
     const answer = inputOut(`Question: ${questionLine} \nYour answer: `);
     if (answer === String(expression)) {
       console.log('Correct!');
