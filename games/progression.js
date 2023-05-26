@@ -20,7 +20,11 @@ const progression = () => {
     const missingNumderIndex = randomArreyIndex(gameSequence);
     const correctAnswer = gameSequence[missingNumderIndex];
     gameSequence[missingNumderIndex] = '..';
-    const answer = inputOut(`Question: ${gameSequence} \nYour answer: `);
+    let sequenceString = '';
+    for (const item of gameSequence) {
+      sequenceString += `${item} `;
+    }
+    const answer = inputOut(`Question: ${sequenceString} \nYour answer: `);
     if (answer === String(correctAnswer)) {
       console.log('Correct!');
     } else {
