@@ -1,5 +1,6 @@
 import {
-  inputOut, randomInt, greetingInStart, randomArreyIndex,
+  randomInt, greetingInStart, randomArreyIndex,
+  interactivOfGame,
 } from '../src/index.js';
 
 const progressionGenerator = () => {
@@ -12,25 +13,22 @@ const progressionGenerator = () => {
   return sequence;
 };
 
+const logic = () => {
+  const gameSequence = progressionGenerator();
+  const missingNumderIndex = randomArreyIndex(gameSequence);
+  const correctAnswer = gameSequence[missingNumderIndex];
+  gameSequence[missingNumderIndex] = '..';
+  const questionLine = gameSequence.join(' ');
+  const output = [];
+  output[0] = questionLine;
+  output[1] = correctAnswer;
+  return output;
+};
+
 const progression = () => {
   const userName = greetingInStart();
   console.log('What number is missing in the progression?');
-  for (let count = 1; count <= 3; count += 1) {
-    const gameSequence = progressionGenerator();
-    const missingNumderIndex = randomArreyIndex(gameSequence);
-    const correctAnswer = gameSequence[missingNumderIndex];
-    gameSequence[missingNumderIndex] = '..';
-    const sequenceString = gameSequence.join(' ');
-    const answer = inputOut(`Question: ${sequenceString} \nYour answer: `);
-    if (answer === String(correctAnswer)) {
-      console.log('Correct!');
-    } else {
-      console.log(`${answer} is wrong answer ;(. Correct answer was ${correctAnswer}.`);
-      console.log(`Let's try again, ${userName}!`);
-      return;
-    }
-  }
-  console.log(`Congratulations, ${userName}!`);
+  interactivOfGame(logic, userName);
 };
 
 export default progression;
