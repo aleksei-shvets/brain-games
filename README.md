@@ -5,16 +5,16 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/e7cfe18062402acf232c/maintainability)](https://codeclimate.com/github/aleksei-shvets/frontend-project-44/maintainability)
 
 ### asciinema-even
-https://asciinema.org/a/TC8xIJYnn2Mrzd58SroRnehw0
+https://asciinema.org/a/WYR3A82YlVDM9gqDqmJ2vgskm
 
 ### asciinema-calc
-https://asciinema.org/a/3BIjIdSYAhHJbTNVHwmbQNHX4
+https://asciinema.org/a/yiFS85ug5jImLqsoeY4ihjAOi
 
 ### asciinema-gcd
-https://asciinema.org/a/q2neYgSq3ZgOZCGK2nwNhzH8C
+https://asciinema.org/a/pI77GW4zMdop6ZAWct1HsqQF2
 
 ### asciinema-progression
-https://asciinema.org/a/CNSBMSIAWyMbnOVuzwGcqtdDy
+https://asciinema.org/a/slyHiZY3ShQb56S1Ih6DtLcJo
 
 ### asciinema-prime
-https://asciinema.org/a/QJQg8RTFThoIt9LDVZTywi6ok
+https://asciinema.org/a/oKipwLu0vt4BARdx2WUD76Bwa
