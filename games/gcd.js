@@ -3,21 +3,12 @@ import { interactivOfGame, randomInt, greetingInStart } from '../src/index.js';
 const logic = () => {
   const firstNumber = randomInt(60);
   const secondNumber = randomInt(50);
-  let marker;
+
+  const marker = firstNumber >= secondNumber ? firstNumber : secondNumber;
+  const upperBound = Math.floor(marker / 2);
   let correctAnswer;
-  let upperBound;
   let gcdNumber;
 
-  if (firstNumber !== secondNumber) {
-    if (firstNumber > secondNumber) {
-      marker = firstNumber;
-    } else {
-      marker = secondNumber;
-    }
-    upperBound = Math.floor(marker / 2);
-  } else {
-    upperBound = firstNumber;
-  }
   for (let i = upperBound; gcdNumber === undefined; i -= 1) {
     if (firstNumber % i === 0 && secondNumber % i === 0) {
       gcdNumber = i;
