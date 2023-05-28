@@ -1,3 +1,31 @@
+### minimum requirements
+node.js 20.0.0
+make
+readline-sync 1.4.10"
+
+### install with all dependencies
+$ make install
+
+### publish (--dry-run)
+$ make publish
+
+### run eslint
+$ make lint
+
+### run games
+
+$ make brain-games
+
+$ make brain-even
+
+$ make brain-calc
+
+$ make brain-gcd
+
+$ make brain-progression
+
+$ make brain-prime
+
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/aleksei-shvets/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/aleksei-shvets/frontend-project-44/actions)
 
