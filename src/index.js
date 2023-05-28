@@ -5,18 +5,18 @@ const inputOut = (question) => {
   return answer;
 };
 
-const randomInt = (increase) => Math.floor(Math.random() * increase + 1);
+export const randomInt = (increase) => Math.floor(Math.random() * increase + 1);
 
-const randomArreyIndex = (arr) => Math.floor(Math.random() * arr.length);
+export const randomArreyIndex = (arr) => Math.floor(Math.random() * arr.length);
 
-const greetingInStart = () => {
+export const greetingInStart = () => {
   console.log('Welcome to the Brain Games!');
   const user = inputOut('May I have your name? ');
   console.log(`Hello, ${user}!`);
   return user;
 };
 
-const interactivOfGame = (logicGenerator, userName) => {
+export const interactivOfGame = (logicGenerator, userName) => {
   for (let count = 1; count <= 3; count += 1) {
     const logic = logicGenerator();
     const questionLine = logic[0];
@@ -31,9 +31,4 @@ const interactivOfGame = (logicGenerator, userName) => {
     }
   }
   console.log(`Congratulations, ${userName}!`);
-};
-
-export {
-  inputOut, randomInt, greetingInStart, randomArreyIndex,
-  interactivOfGame,
 };
