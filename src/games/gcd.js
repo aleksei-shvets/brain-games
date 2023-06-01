@@ -10,13 +10,13 @@ const logic = () => {
   let gcdNumber;
 
   if (firstNumber === secondNumber) {
-    correctAnswer = firstNumber;
+    correctAnswer = String(firstNumber);
   } else {
     for (let i = upperBound; gcdNumber === undefined; i -= 1) {
       if (firstNumber % i === 0 && secondNumber % i === 0) {
         gcdNumber = i;
       }
-      correctAnswer = gcdNumber;
+      correctAnswer = String(gcdNumber);
     }
   }
 

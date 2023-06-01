@@ -16,7 +16,7 @@ const progressionGenerator = () => {
 const logic = () => {
   const gameSequence = progressionGenerator();
   const missingNumderIndex = randomInt(gameSequence.length);
-  const correctAnswer = gameSequence[missingNumderIndex];
+  const correctAnswer = String(gameSequence[missingNumderIndex]);
   gameSequence[missingNumderIndex] = '..';
   const questionLine = gameSequence.join(' ');
   const output = [];

@@ -11,13 +11,13 @@ const logic = () => {
   let correctAnswer;
   switch (operator) {
     case '+':
-      correctAnswer = firstNumber + secondNumber;
+      correctAnswer = String(firstNumber + secondNumber);
       break;
     case '-':
-      correctAnswer = firstNumber - secondNumber;
+      correctAnswer = String(firstNumber - secondNumber);
       break;
     case '*':
-      correctAnswer = firstNumber * secondNumber;
+      correctAnswer = String(firstNumber * secondNumber);
       break;
     default:
       break;

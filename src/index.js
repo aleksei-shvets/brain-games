@@ -21,7 +21,7 @@ export const interactivOfGame = (logicGenerator, userName) => {
     const logic = logicGenerator();
     const [questionLine, correctAnswer] = logic;
     const answer = inputOut(`Question: ${questionLine} \nYour answer: `);
-    if (answer === String(correctAnswer)) {
+    if (answer === correctAnswer) {
       console.log('Correct!');
     } else {
       console.log(`${answer} is wrong answer ;(. Correct answer was ${correctAnswer}.`);
