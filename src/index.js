@@ -15,7 +15,9 @@ export const greetingInStart = () => {
 };
 
 export const interactivOfGame = (logicGenerator, userName) => {
-  for (let count = 1; count <= 3; count += 1) {
+  const startCountGame = 1;
+  const endCountGame = 3;
+  for (let gameCount = startCountGame; gameCount <= endCountGame; gameCount += 1) {
     const logic = logicGenerator();
     const questionLine = logic[0];
     const correctAnswer = logic[1];
