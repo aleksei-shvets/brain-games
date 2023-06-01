@@ -1,6 +1,6 @@
 import {
   interactivOfGame, randomInt, greetingInStart, randomArreyIndex,
-} from '../src/index.js';
+} from '../index.js';
 
 const logic = () => {
   const firstNumber = randomInt(10);

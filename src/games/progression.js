@@ -1,7 +1,7 @@
 import {
   randomInt, greetingInStart, randomArreyIndex,
   interactivOfGame,
-} from '../src/index.js';
+} from '../index.js';
 
 const progressionGenerator = () => {
   const progressionStep = randomInt(10) + 2 - randomInt(8);
