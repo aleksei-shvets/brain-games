@@ -9,12 +9,17 @@ const logic = () => {
   let correctAnswer;
   let gcdNumber;
 
-  for (let i = upperBound; gcdNumber === undefined; i -= 1) {
-    if (firstNumber % i === 0 && secondNumber % i === 0) {
-      gcdNumber = i;
+  if (firstNumber === secondNumber) {
+    correctAnswer = firstNumber;
+  } else {
+    for (let i = upperBound; gcdNumber === undefined; i -= 1) {
+      if (firstNumber % i === 0 && secondNumber % i === 0) {
+        gcdNumber = i;
+      }
+      correctAnswer = gcdNumber;
     }
-    correctAnswer = gcdNumber;
   }
+
   const questionLine = `${firstNumber} ${secondNumber}`;
 
   const output = [];
