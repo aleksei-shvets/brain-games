@@ -5,9 +5,7 @@ const inputOut = (question) => {
   return answer;
 };
 
-export const randomInt = (increase) => Math.floor(Math.random() * increase + 1);
-
-export const randomArreyIndex = (arr) => Math.floor(Math.random() * arr.length);
+export const randomInt = (max) => Math.floor(Math.random() * (max - 1) + 1);
 
 export const greetingInStart = () => {
   console.log('Welcome to the Brain Games!');
