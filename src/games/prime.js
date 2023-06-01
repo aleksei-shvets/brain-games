@@ -1,4 +1,4 @@
-import { interactivOfGame, randomInt, greetingInStart } from '../index.js';
+import { interactivOfGame, randomInt } from '../index.js';
 
 const isPrime = (num) => {
   if (num < 2) {
@@ -26,11 +26,10 @@ const logic = () => {
   return output;
 };
 
-const prime = () => {
-  const userName = greetingInStart();
-  console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
+const rules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-  interactivOfGame(logic, userName);
+const prime = () => {
+  interactivOfGame(logic, rules);
 };
 
 export default prime;

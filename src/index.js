@@ -14,7 +14,11 @@ export const greetingInStart = () => {
   return user;
 };
 
-export const interactivOfGame = (logicGenerator, userName) => {
+export const interactivOfGame = (logicGenerator, rules) => {
+  const userName = greetingInStart();
+
+  console.log(rules);
+
   const startCountGame = 1;
   const endCountGame = 3;
   for (let gameCount = startCountGame; gameCount <= endCountGame; gameCount += 1) {

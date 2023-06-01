@@ -1,4 +1,4 @@
-import { interactivOfGame, randomInt, greetingInStart } from '../index.js';
+import { interactivOfGame, randomInt } from '../index.js';
 
 const generationCorrectAnswer = (numOne, numTwo) => {
   const marker = numOne >= numTwo ? numOne : numTwo;
@@ -33,11 +33,10 @@ const logic = () => {
   return output;
 };
 
-const gcd = () => {
-  const userName = greetingInStart();
-  console.log('Find the greatest common divisor of given numbers.');
+const rules = 'Find the greatest common divisor of given numbers.';
 
-  interactivOfGame(logic, userName);
+const gcd = () => {
+  interactivOfGame(logic, rules);
 };
 
 export default gcd;

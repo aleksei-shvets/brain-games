@@ -19,10 +19,10 @@ const logic = () => {
   return output;
 };
 
+const rules = 'Answer "yes" if the number is even, otherwise answer "no".';
+
 const even = () => {
-  const userName = greetingInStart();
-  console.log('Answer "yes" if the number is even, otherwise answer "no".');
-  interactivOfGame(logic, userName);
+  interactivOfGame(logic, rules);
 };
 
 export default even;

@@ -1,6 +1,4 @@
-import {
-  interactivOfGame, randomInt, greetingInStart,
-} from '../index.js';
+import { interactivOfGame, randomInt } from '../index.js';
 
 const generationCorrectAnswer = (numOne, operation, numTwo) => {
   let answer;
@@ -30,11 +28,10 @@ const logic = () => {
   return [questionLine, correctAnswer];
 };
 
-const calc = () => {
-  const userName = greetingInStart();
-  console.log('What is the result of the expression?');
+const rules = 'What is the result of the expression?';
 
-  interactivOfGame(logic, userName);
+const calc = () => {
+  interactivOfGame(logic, rules);
 };
 
 export default calc;

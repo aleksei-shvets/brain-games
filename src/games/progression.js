@@ -1,7 +1,4 @@
-import {
-  randomInt, greetingInStart,
-  interactivOfGame,
-} from '../index.js';
+import { randomInt, interactivOfGame } from '../index.js';
 
 const progressionGenerator = () => {
   const progressionStep = randomInt(20) + 12 - randomInt(18);
@@ -25,10 +22,10 @@ const logic = () => {
   return output;
 };
 
+const rules = 'What number is missing in the progression?';
+
 const progression = () => {
-  const userName = greetingInStart();
-  console.log('What number is missing in the progression?');
-  interactivOfGame(logic, userName);
+  interactivOfGame(logic, rules);
 };
 
 export default progression;
