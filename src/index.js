@@ -19,8 +19,7 @@ export const interactivOfGame = (logicGenerator, userName) => {
   const endCountGame = 3;
   for (let gameCount = startCountGame; gameCount <= endCountGame; gameCount += 1) {
     const logic = logicGenerator();
-    const questionLine = logic[0];
-    const correctAnswer = logic[1];
+    const [questionLine, correctAnswer] = logic;
     const answer = inputOut(`Question: ${questionLine} \nYour answer: `);
     if (answer === String(correctAnswer)) {
       console.log('Correct!');
