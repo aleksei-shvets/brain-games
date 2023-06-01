@@ -27,10 +27,7 @@ const logic = () => {
 
   const questionLine = `${firstNumber} ${operator} ${secondNumber}`;
 
-  const output = [];
-  output[0] = questionLine;
-  output[1] = correctAnswer;
-  return output;
+  return [questionLine, correctAnswer];
 };
 
 const calc = () => {
