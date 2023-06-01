@@ -1,24 +1,29 @@
 import { interactivOfGame, randomInt, greetingInStart } from '../index.js';
 
+const generationCorrectAnswer = (numOne, numTwo) => {
+  const marker = numOne >= numTwo ? numOne : numTwo;
+  const upperBound = Math.floor(marker / 2);
+  let answer;
+  let gcdNumber;
+
+  if (numOne === numTwo) {
+    answer = String(numOne);
+  } else {
+    for (let i = upperBound; gcdNumber === undefined; i -= 1) {
+      if (numOne % i === 0 && numTwo % i === 0) {
+        gcdNumber = i;
+      }
+      answer = String(gcdNumber);
+    }
+  }
+  return answer;
+};
+
 const logic = () => {
   const firstNumber = randomInt(60);
   const secondNumber = randomInt(50);
 
-  const marker = firstNumber >= secondNumber ? firstNumber : secondNumber;
-  const upperBound = Math.floor(marker / 2);
-  let correctAnswer;
-  let gcdNumber;
-
-  if (firstNumber === secondNumber) {
-    correctAnswer = String(firstNumber);
-  } else {
-    for (let i = upperBound; gcdNumber === undefined; i -= 1) {
-      if (firstNumber % i === 0 && secondNumber % i === 0) {
-        gcdNumber = i;
-      }
-      correctAnswer = String(gcdNumber);
-    }
-  }
+  const correctAnswer = generationCorrectAnswer(firstNumber, secondNumber);
 
   const questionLine = `${firstNumber} ${secondNumber}`;
 
