@@ -1,4 +1,4 @@
-import { interactivOfGame, randomInt, greetingInStart } from '../index.js';
+import { interactivOfGame, randomInt } from '../index.js';
 
 const generationCorrectAnswer = (num) => {
   let answer;
