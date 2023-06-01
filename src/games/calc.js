@@ -6,14 +6,11 @@ const generationCorrectAnswer = (numOne, operation, numTwo) => {
   let answer;
   switch (operation) {
     case '+':
-      answer = String(numOne + numTwo);
-      break;
+      return String(numOne + numTwo);
     case '-':
-      answer = String(numOne - numTwo);
-      break;
+      return String(numOne - numTwo);
     case '*':
-      answer = String(numOne * numTwo);
-      break;
+      return String(numOne * numTwo);
     default:
       break;
   }
