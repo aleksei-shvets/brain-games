@@ -1,10 +1,10 @@
 import {
-  randomInt, greetingInStart, randomArreyIndex,
+  randomInt, greetingInStart,
   interactivOfGame,
 } from '../index.js';
 
 const progressionGenerator = () => {
-  const progressionStep = randomInt(10) + 2 - randomInt(8);
+  const progressionStep = randomInt(20) + 12 - randomInt(18);
   const startNamber = randomInt(10);
   const sequence = [];
   for (let num = startNamber; sequence.length <= 10; num += progressionStep) {
@@ -15,7 +15,7 @@ const progressionGenerator = () => {
 
 const logic = () => {
   const gameSequence = progressionGenerator();
-  const missingNumderIndex = randomArreyIndex(gameSequence);
+  const missingNumderIndex = randomInt(gameSequence.length);
   const correctAnswer = gameSequence[missingNumderIndex];
   gameSequence[missingNumderIndex] = '..';
   const questionLine = gameSequence.join(' ');

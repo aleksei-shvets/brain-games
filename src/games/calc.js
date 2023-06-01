@@ -1,12 +1,12 @@
 import {
-  interactivOfGame, randomInt, greetingInStart, randomArreyIndex,
+  interactivOfGame, randomInt, greetingInStart,
 } from '../index.js';
 
 const logic = () => {
   const firstNumber = randomInt(10);
   const secondNumber = randomInt(10);
   const operatorsList = ['+', '-', '*'];
-  const indexOfOperatorList = randomArreyIndex(operatorsList);
+  const indexOfOperatorList = randomInt(operatorsList.length);
   const operator = operatorsList[indexOfOperatorList];
   let correctAnswer;
   switch (operator) {
