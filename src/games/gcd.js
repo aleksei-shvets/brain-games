@@ -23,10 +23,7 @@ const logic = () => {
 
   const questionLine = `${firstNumber} ${secondNumber}`;
 
-  const output = [];
-  output[0] = questionLine;
-  output[1] = correctAnswer;
-  return output;
+  return [questionLine, correctAnswer];
 };
 
 const rules = 'Find the greatest common divisor of given numbers.';
