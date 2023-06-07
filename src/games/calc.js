@@ -4,11 +4,11 @@ import randomInt from '../utils.js';
 const generationCorrectAnswer = (numOne, operation, numTwo) => {
   switch (operation) {
     case '+':
-      return String(numOne + numTwo);
+      return numOne + numTwo;
     case '-':
-      return String(numOne - numTwo);
+      return numOne - numTwo;
     case '*':
-      return String(numOne * numTwo);
+      return numOne * numTwo;
     default:
       break;
   }
@@ -20,7 +20,7 @@ const logic = () => {
   const operatorsList = ['+', '-', '*'];
   const indexOfOperatorList = randomInt(0, operatorsList.length);
   const operator = operatorsList[indexOfOperatorList];
-  const correctAnswer = generationCorrectAnswer(firstNumber, operator, secondNumber);
+  const correctAnswer = String(generationCorrectAnswer(firstNumber, operator, secondNumber));
 
   const questionLine = `${firstNumber} ${operator} ${secondNumber}`;
 
