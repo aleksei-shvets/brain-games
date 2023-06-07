@@ -2,7 +2,7 @@ import startOfGame from '../index.js';
 import randomInt from '../utils.js';
 
 const progressionGenerator = () => {
-  const progressionStep = randomInt(0, 20) + 12 - randomInt(0, 18);
+  const progressionStep = randomInt(0, 20) - randomInt(0, 20);
   const startNamber = randomInt(0, 20);
   const sequence = [];
   for (let num = startNamber; sequence.length <= 10; num += progressionStep) {
