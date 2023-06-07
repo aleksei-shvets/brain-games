@@ -1,5 +1,7 @@
 import * as readlineSync from 'readline-sync';
 
+const finishRoudOfGame = 3;
+
 const startOfGame = (logicGenerator, rules) => {
   const inputOut = (question) => {
     const answer = readlineSync.question(question);
@@ -16,9 +18,7 @@ const startOfGame = (logicGenerator, rules) => {
 
   console.log(rules);
 
-  const startCountGame = 1;
-  const endCountGame = 3;
-  for (let gameCount = startCountGame; gameCount <= endCountGame; gameCount += 1) {
+  for (let gameRoundCount = 0; gameRoundCount < finishRoudOfGame; gameRoundCount += 1) {
     const logic = logicGenerator();
     const [questionLine, correctAnswer] = logic;
     const answer = inputOut(`Question: ${questionLine} \nYour answer: `);
