@@ -20,7 +20,7 @@ const logic = () => {
   const firstNumber = randomInt(0, 10);
   const secondNumber = randomInt(0, 10);
   const operatorsList = ['+', '-', '*'];
-  const indexOfOperatorList = randomInt(operatorsList.length);
+  const indexOfOperatorList = randomInt(0, operatorsList.length);
   const operator = operatorsList[indexOfOperatorList];
   const correctAnswer = generationCorrectAnswer(firstNumber, operator, secondNumber);
 
