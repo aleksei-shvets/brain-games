@@ -1,7 +1,7 @@
 import startOfGame from '../index.js';
 import randomInt from '../utils.js';
 
-const generationCorrectAnswer = (num) => {
+const isEven = (num) => {
   let answer;
   if (num % 2 === 0) {
     answer = 'yes';
@@ -13,7 +13,7 @@ const generationCorrectAnswer = (num) => {
 
 const logic = () => {
   const questionLine = randomInt(1, 100);
-  const correctAnswer = generationCorrectAnswer(questionLine);
+  const correctAnswer = isEven(questionLine);
   const output = [];
   output[0] = questionLine;
   output[1] = correctAnswer;
