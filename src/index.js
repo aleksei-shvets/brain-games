@@ -19,8 +19,7 @@ const startOfGame = (logicGenerator, rules) => {
   console.log(rules);
 
   for (let gameRoundCount = 0; gameRoundCount < finishRoudOfGame; gameRoundCount += 1) {
-    const logic = logicGenerator();
-    const [questionLine, correctAnswer] = logic;
+    const [questionLine, correctAnswer] = logicGenerator();
     const answer = inputOut(`Question: ${questionLine} \nYour answer: `);
     if (answer === correctAnswer) {
       console.log('Correct!');
