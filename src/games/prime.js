@@ -1,4 +1,4 @@
-import interactivOfGame from '../index.js';
+import startOfGame from '../index.js';
 import randomInt from '../utils.js';
 
 const isPrime = (num) => {
@@ -30,7 +30,7 @@ const logic = () => {
 const rules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const prime = () => {
-  interactivOfGame(logic, rules);
+  startOfGame(logic, rules);
 };
 
 export default prime;

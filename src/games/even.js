@@ -1,4 +1,4 @@
-import interactivOfGame from '../index.js';
+import startOfGame from '../index.js';
 import randomInt from '../utils.js';
 
 const generationCorrectAnswer = (num) => {
@@ -23,7 +23,7 @@ const logic = () => {
 const rules = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 const even = () => {
-  interactivOfGame(logic, rules);
+  startOfGame(logic, rules);
 };
 
 export default even;

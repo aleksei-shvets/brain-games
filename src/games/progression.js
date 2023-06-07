@@ -1,4 +1,4 @@
-import interactivOfGame from '../index.js';
+import startOfGame from '../index.js';
 import randomInt from '../utils.js';
 
 const progressionGenerator = () => {
@@ -26,7 +26,7 @@ const logic = () => {
 const rules = 'What number is missing in the progression?';
 
 const progression = () => {
-  interactivOfGame(logic, rules);
+  startOfGame(logic, rules);
 };
 
 export default progression;

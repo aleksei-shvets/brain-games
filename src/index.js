@@ -1,6 +1,6 @@
 import * as readlineSync from 'readline-sync';
 
-const interactivOfGame = (logicGenerator, rules) => {
+const startOfGame = (logicGenerator, rules) => {
   const inputOut = (question) => {
     const answer = readlineSync.question(question);
     return answer;
@@ -33,4 +33,4 @@ const interactivOfGame = (logicGenerator, rules) => {
   console.log(`Congratulations, ${userName}!`);
 };
 
-export default interactivOfGame;
+export default startOfGame;
