@@ -5,7 +5,8 @@ const progressionGenerator = () => {
   const progressionStep = randomInt(0, 20) - randomInt(0, 20);
   const startNamber = randomInt(0, 20);
   const sequence = [];
-  for (let num = startNamber; sequence.length <= 10; num += progressionStep) {
+  const sequenceItemsCount = 10;
+  for (let num = startNamber; sequence.length <= sequenceItemsCount; num += progressionStep) {
     sequence.push(num);
   }
   return sequence;
