@@ -1,5 +1,5 @@
 import interactivOfGame from '../index.js';
-import { randomInt } from '../utils.js';
+import randomInt from '../utils.js';
 
 const generationCorrectAnswer = (numOne, numTwo) => {
   const marker = numOne >= numTwo ? numOne : numTwo;

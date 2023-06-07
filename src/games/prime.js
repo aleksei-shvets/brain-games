@@ -1,5 +1,5 @@
 import interactivOfGame from '../index.js';
-import { randomInt } from '../utils.js';
+import randomInt from '../utils.js';
 
 const isPrime = (num) => {
   if (num < 2) {
