@@ -21,8 +21,8 @@ const generationCorrectAnswer = (numOne, numTwo) => {
 };
 
 const logic = () => {
-  const firstNumber = randomInt(60);
-  const secondNumber = randomInt(50);
+  const firstNumber = randomInt(1, 60);
+  const secondNumber = randomInt(1, 50);
 
   const correctAnswer = generationCorrectAnswer(firstNumber, secondNumber);
 

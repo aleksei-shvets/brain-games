@@ -18,7 +18,7 @@ const isPrime = (num) => {
 };
 
 const logic = () => {
-  const questionLine = randomInt(20);
+  const questionLine = randomInt(1, 50);
   const correctAnswer = isPrime(questionLine);
 
   const output = [];

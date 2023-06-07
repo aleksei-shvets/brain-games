@@ -17,8 +17,8 @@ const generationCorrectAnswer = (numOne, operation, numTwo) => {
 };
 
 const logic = () => {
-  const firstNumber = randomInt(10);
-  const secondNumber = randomInt(10);
+  const firstNumber = randomInt(0, 10);
+  const secondNumber = randomInt(0, 10);
   const operatorsList = ['+', '-', '*'];
   const indexOfOperatorList = randomInt(operatorsList.length);
   const operator = operatorsList[indexOfOperatorList];

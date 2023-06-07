@@ -12,4 +12,4 @@ export const greetingInStart = () => {
   return user;
 };
 
-export const randomInt = (max) => Math.floor(Math.random() * (max - 1) + 1);
+export const randomInt = (min, max) => Math.floor(Math.random() * (max - min) + min);

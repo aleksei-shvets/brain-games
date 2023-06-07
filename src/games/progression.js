@@ -2,8 +2,8 @@ import interactivOfGame from '../index.js';
 import { randomInt } from '../utils.js';
 
 const progressionGenerator = () => {
-  const progressionStep = randomInt(20) + 12 - randomInt(18);
-  const startNamber = randomInt(10);
+  const progressionStep = randomInt(0, 20) + 12 - randomInt(0, 18);
+  const startNamber = randomInt(0, 20);
   const sequence = [];
   for (let num = startNamber; sequence.length <= 10; num += progressionStep) {
     sequence.push(num);
@@ -13,7 +13,7 @@ const progressionGenerator = () => {
 
 const logic = () => {
   const gameSequence = progressionGenerator();
-  const missingNumderIndex = randomInt(gameSequence.length);
+  const missingNumderIndex = randomInt(0, gameSequence.length);
   const correctAnswer = String(gameSequence[missingNumderIndex]);
   gameSequence[missingNumderIndex] = '..';
   const questionLine = gameSequence.join(' ');

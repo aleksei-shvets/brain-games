@@ -12,7 +12,7 @@ const generationCorrectAnswer = (num) => {
 };
 
 const logic = () => {
-  const questionLine = randomInt(100);
+  const questionLine = randomInt(1, 100);
   const correctAnswer = generationCorrectAnswer(questionLine);
   const output = [];
   output[0] = questionLine;
