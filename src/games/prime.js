@@ -3,7 +3,7 @@ import randomInt from '../utils.js';
 
 const isPrime = (num) => {
   if (num < 2) {
-    return 'no';
+    return false;
   }
   let count = 0;
   for (let i = 1; i <= Math.round(num / 2); i += 1) {
@@ -11,20 +11,14 @@ const isPrime = (num) => {
       count += 1;
     }
   }
-  if (count > 1) {
-    return 'no';
-  }
-  return 'yes';
+  return count > 1;
 };
 
 const logic = () => {
   const questionLine = randomInt(1, 50);
-  const correctAnswer = isPrime(questionLine);
+  const correctAnswer = isPrime(questionLine) ? 'yes' : 'no';
 
-  const output = [];
-  output[0] = questionLine;
-  output[1] = correctAnswer;
-  return output;
+  return [questionLine, correctAnswer];
 };
 
 const rules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
