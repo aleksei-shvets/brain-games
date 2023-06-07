@@ -2,17 +2,19 @@ import startOfGame from '../index.js';
 import randomInt from '../utils.js';
 
 const generationCorrectAnswer = (numOne, numTwo) => {
-  if (numOne === numTwo) {
-    return numOne;
+  let first = numOne;
+  let second = numTwo;
+  if (first === second) {
+    return first;
   }
-  while (numOne !== 0 && numTwo !== 0) {
-    if (numOne > numTwo) {
-      numOne %= numTwo;
+  while (first !== 0 && second !== 0) {
+    if (first > second) {
+      first %= second;
     } else {
-      numTwo %= numOne;
+      second %= first;
     }
   }
-  return numOne + numTwo;
+  return first + second;
 };
 
 const logic = () => {
