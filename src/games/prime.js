@@ -5,13 +5,13 @@ const isPrime = (num) => {
   if (num < 2) {
     return false;
   }
-  let count = 0;
-  for (let i = 1; i <= Math.round(num / 2); i += 1) {
+
+  for (let i = 2; i <= Math.round(num / 2); i += 1) {
     if (num % i === 0) {
-      count += 1;
+      return false;
     }
   }
-  return count > 1;
+  return true;
 };
 
 const logic = () => {
