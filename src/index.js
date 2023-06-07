@@ -1,18 +1,6 @@
-import * as readlineSync from 'readline-sync';
+import { inputOut, greetingInStart } from './utils.js';
 
-const inputOut = (question) => {
-  const answer = readlineSync.question(question);
-  return answer;
-};
-
-export const greetingInStart = () => {
-  console.log('Welcome to the Brain Games!');
-  const user = inputOut('May I have your name? ');
-  console.log(`Hello, ${user}!`);
-  return user;
-};
-
-export const interactivOfGame = (logicGenerator, rules) => {
+const interactivOfGame = (logicGenerator, rules) => {
   const userName = greetingInStart();
 
   console.log(rules);
@@ -33,3 +21,5 @@ export const interactivOfGame = (logicGenerator, rules) => {
   }
   console.log(`Congratulations, ${userName}!`);
 };
+
+export default interactivOfGame;
