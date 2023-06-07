@@ -5,8 +5,6 @@ const inputOut = (question) => {
   return answer;
 };
 
-export const randomInt = (max) => Math.floor(Math.random() * (max - 1) + 1);
-
 export const greetingInStart = () => {
   console.log('Welcome to the Brain Games!');
   const user = inputOut('May I have your name? ');
