@@ -2,16 +2,13 @@ import startOfGame from '../index.js';
 import randomInt from '../utils.js';
 
 const generationCorrectAnswer = (numOne, operation, numTwo) => {
-  switch (operation) {
-    case '+':
-      return numOne + numTwo;
-    case '-':
-      return numOne - numTwo;
-    case '*':
-      return numOne * numTwo;
-    default:
-      break;
+  if (operation === '+') {
+    return numOne + numTwo;
   }
+  if (operation === '-') {
+    return numOne - numTwo;
+  }
+  return numOne * numTwo;
 };
 
 const logic = () => {
