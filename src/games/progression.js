@@ -1,4 +1,5 @@
-import { randomInt, interactivOfGame } from '../index.js';
+import { interactivOfGame } from '../index.js';
+import { randomInt } from '../utils.js';
 
 const progressionGenerator = () => {
   const progressionStep = randomInt(20) + 12 - randomInt(18);
