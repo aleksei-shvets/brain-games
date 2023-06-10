@@ -1,12 +1,13 @@
 import startOfGame from '../index.js';
 import randomInt from '../utils.js';
 
+const progressionLength = 10;
+
 const progressionGenerator = () => {
   const progressionStep = randomInt(0, 20) - randomInt(0, 20);
   const startNamber = randomInt(0, 20);
   const sequence = [];
-  const sequenceItemsCount = 10;
-  for (let num = startNamber; sequence.length <= sequenceItemsCount; num += progressionStep) {
+  for (let num = startNamber; sequence.length <= progressionLength; num += progressionStep) {
     sequence.push(num);
   }
   return sequence;
