@@ -18,10 +18,8 @@ const logic = () => {
   const correctAnswer = String(gameSequence[missingNumderIndex]);
   gameSequence[missingNumderIndex] = '..';
   const questionLine = gameSequence.join(' ');
-  const output = [];
-  output[0] = questionLine;
-  output[1] = correctAnswer;
-  return output;
+
+  return [questionLine, correctAnswer];
 };
 
 const rules = 'What number is missing in the progression?';
