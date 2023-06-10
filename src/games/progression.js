@@ -26,8 +26,6 @@ const logic = () => {
 
 const rules = 'What number is missing in the progression?';
 
-const progression = () => {
+export default () => {
   startOfGame(logic, rules);
 };
-
-export default progression;

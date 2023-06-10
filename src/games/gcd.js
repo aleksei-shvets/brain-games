@@ -30,8 +30,6 @@ const logic = () => {
 
 const rules = 'Find the greatest common divisor of given numbers.';
 
-const gcd = () => {
+export default () => {
   startOfGame(logic, rules);
 };
-
-export default gcd;

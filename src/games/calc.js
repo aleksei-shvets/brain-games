@@ -27,8 +27,6 @@ const logic = () => {
 
 const rules = 'What is the result of the expression?';
 
-const calc = () => {
+export default () => {
   startOfGame(logic, rules);
 };
-
-export default calc;

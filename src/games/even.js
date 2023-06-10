@@ -14,8 +14,6 @@ const logic = () => {
 
 const rules = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-const even = () => {
+export default () => {
   startOfGame(logic, rules);
 };
-
-export default even;
