@@ -1,7 +1,7 @@
 import startOfGame from '../index.js';
 import randomInt from '../utils.js';
 
-const generationCorrectAnswer = (numOne, numTwo) => {
+const correctAnswerGeneration = (numOne, numTwo) => {
   let first = numOne;
   let second = numTwo;
   if (first === second) {
@@ -21,7 +21,7 @@ const logic = () => {
   const firstNumber = randomInt(1, 60);
   const secondNumber = randomInt(1, 60);
 
-  const correctAnswer = String(generationCorrectAnswer(firstNumber, secondNumber));
+  const correctAnswer = String(correctAnswerGeneration(firstNumber, secondNumber));
 
   const questionLine = `${firstNumber} ${secondNumber}`;
 
