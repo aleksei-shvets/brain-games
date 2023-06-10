@@ -6,10 +6,8 @@ const isEven = (num) => num % 2 === 0;
 const logic = () => {
   const questionLine = randomInt(1, 100);
   const correctAnswer = isEven(questionLine) ? 'yes' : 'no';
-  const output = [];
-  output[0] = questionLine;
-  output[1] = correctAnswer;
-  return output;
+
+  return [questionLine, correctAnswer];
 };
 
 const rules = 'Answer "yes" if the number is even, otherwise answer "no".';
