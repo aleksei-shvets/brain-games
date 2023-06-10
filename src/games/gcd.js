@@ -35,22 +35,3 @@ const gcd = () => {
 };
 
 export default gcd;
-
-/* const generationCorrectAnswer = (numOne, numTwo) => {
-  const marker = numOne >= numTwo ? numOne : numTwo;
-  const upperBound = Math.floor(marker / 2);
-  let answer;
-  let gcdNumber;
-
-  if (numOne === numTwo) {
-    answer = String(numOne);
-  } else {
-    for (let i = upperBound; gcdNumber === undefined; i -= 1) {
-      if (numOne % i === 0 && numTwo % i === 0) {
-        gcdNumber = i;
-      }
-      answer = String(gcdNumber);
-    }
-  }
-  return answer;
-}; */
