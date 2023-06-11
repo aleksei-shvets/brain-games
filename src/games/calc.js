@@ -7,8 +7,10 @@ const correctAnswerGeneration = (numOne, operation, numTwo) => {
       return numOne + numTwo;
     case '-':
       return numOne - numTwo;
-    default:
+    case '*':
       return numOne * numTwo;
+    default:
+      throw new Error(`Unknown operator: '${operation}'!`);
   }
 };
 
