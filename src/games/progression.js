@@ -3,7 +3,7 @@ import randomInt from '../utils.js';
 
 const progressionLength = 10;
 
-const progressionGenerator = () => {
+const progressionGeneration = () => {
   const progressionStep = randomInt(0, 20) - randomInt(0, 20);
   const startNamber = randomInt(0, 20);
   const sequence = [];
@@ -13,8 +13,8 @@ const progressionGenerator = () => {
   return sequence;
 };
 
-const logic = () => {
-  const gameSequence = progressionGenerator();
+const logicFormation = () => {
+  const gameSequence = progressionGeneration();
   const missingNumderIndex = randomInt(0, gameSequence.length);
   const correctAnswer = String(gameSequence[missingNumderIndex]);
   gameSequence[missingNumderIndex] = '..';
@@ -26,5 +26,5 @@ const logic = () => {
 const rules = 'What number is missing in the progression?';
 
 export default () => {
-  startOfGame(logic, rules);
+  startOfGame(logicFormation, rules);
 };

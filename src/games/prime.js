@@ -14,7 +14,7 @@ const isPrime = (num) => {
   return true;
 };
 
-const logic = () => {
+const logicFormation = () => {
   const questionLine = randomInt(1, 50);
   const correctAnswer = isPrime(questionLine) ? 'yes' : 'no';
 
@@ -24,5 +24,5 @@ const logic = () => {
 const rules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 export default () => {
-  startOfGame(logic, rules);
+  startOfGame(logicFormation, rules);
 };

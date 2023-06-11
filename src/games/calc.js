@@ -14,7 +14,7 @@ const correctAnswerGeneration = (numOne, operation, numTwo) => {
   }
 };
 
-const logic = () => {
+const logicFormation = () => {
   const firstNumber = randomInt(0, 10);
   const secondNumber = randomInt(0, 10);
   const operatorsList = ['+', '-', '*'];
@@ -30,5 +30,5 @@ const logic = () => {
 const rules = 'What is the result of the expression?';
 
 export default () => {
-  startOfGame(logic, rules);
+  startOfGame(logicFormation, rules);
 };

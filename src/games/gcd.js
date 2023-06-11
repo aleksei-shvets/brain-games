@@ -17,7 +17,7 @@ const correctAnswerGeneration = (numOne, numTwo) => {
   return first + second;
 };
 
-const logic = () => {
+const logicFormation = () => {
   const firstNumber = randomInt(1, 60);
   const secondNumber = randomInt(1, 60);
 
@@ -31,5 +31,5 @@ const logic = () => {
 const rules = 'Find the greatest common divisor of given numbers.';
 
 export default () => {
-  startOfGame(logic, rules);
+  startOfGame(logicFormation, rules);
 };
