@@ -1,4 +1,4 @@
-import startOfGame from '../index.js';
+import runGame from '../index.js';
 import randomInt from '../utils.js';
 
 const progressionLength = 10;
@@ -26,5 +26,5 @@ const logicFormation = () => {
 const rules = 'What number is missing in the progression?';
 
 export default () => {
-  startOfGame(logicFormation, rules);
+  runGame(logicFormation, rules);
 };

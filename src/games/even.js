@@ -1,4 +1,4 @@
-import startOfGame from '../index.js';
+import runGame from '../index.js';
 import randomInt from '../utils.js';
 
 const isEven = (num) => num % 2 === 0;
@@ -13,5 +13,5 @@ const logicFormation = () => {
 const rules = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 export default () => {
-  startOfGame(logicFormation, rules);
+  runGame(logicFormation, rules);
 };

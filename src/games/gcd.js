@@ -1,4 +1,4 @@
-import startOfGame from '../index.js';
+import runGame from '../index.js';
 import randomInt from '../utils.js';
 
 const correctAnswerGeneration = (numOne, numTwo) => {
@@ -31,5 +31,5 @@ const logicFormation = () => {
 const rules = 'Find the greatest common divisor of given numbers.';
 
 export default () => {
-  startOfGame(logicFormation, rules);
+  runGame(logicFormation, rules);
 };

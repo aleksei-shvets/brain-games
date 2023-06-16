@@ -1,4 +1,4 @@
-import startOfGame from '../index.js';
+import runGame from '../index.js';
 import randomInt from '../utils.js';
 
 const correctAnswerGeneration = (numOne, operation, numTwo) => {
@@ -30,5 +30,5 @@ const logicFormation = () => {
 const rules = 'What is the result of the expression?';
 
 export default () => {
-  startOfGame(logicFormation, rules);
+  runGame(logicFormation, rules);
 };
