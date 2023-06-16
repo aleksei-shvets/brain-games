@@ -1,27 +1,13 @@
 import runGame from '../index.js';
 import randomInt from '../utils.js';
 
-const correctAnswerGeneration = (numOne, numTwo) => {
-  let first = numOne;
-  let second = numTwo;
-  if (first === second) {
-    return first;
-  }
-  while (first !== 0 && second !== 0) {
-    if (first > second) {
-      first %= second;
-    } else {
-      second %= first;
-    }
-  }
-  return first + second;
-};
+const gcdFinding = (numOne, numTwo) => (numTwo ? gcdFinding(numTwo, numOne % numTwo) : numOne);
 
 const logicFormation = () => {
   const firstNumber = randomInt(1, 60);
   const secondNumber = randomInt(1, 60);
 
-  const correctAnswer = String(correctAnswerGeneration(firstNumber, secondNumber));
+  const correctAnswer = String(gcdFinding(firstNumber, secondNumber));
 
   const questionLine = `${firstNumber} ${secondNumber}`;
 
