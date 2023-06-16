@@ -7,9 +7,7 @@ const progressionStepCreate = () => randomInt(0, 20) - randomInt(0, 20);
 
 const startNumberCreate = () => randomInt(0, 20);
 
-const progressionGeneration = () => {
-  const startNumber = startNumberCreate();
-  const progressionStep = progressionStepCreate();
+const progressionGeneration = (startNumber, progressionStep) => {
   const sequence = [];
   for (let num = startNumber; sequence.length <= progressionLength; num += progressionStep) {
     sequence.push(num);
@@ -18,7 +16,7 @@ const progressionGeneration = () => {
 };
 
 const logicFormation = () => {
-  const gameSequence = progressionGeneration();
+  const gameSequence = progressionGeneration(startNumberCreate(), progressionStepCreate());
   const missingNumderIndex = randomInt(0, gameSequence.length);
   const correctAnswer = String(gameSequence[missingNumderIndex]);
   gameSequence[missingNumderIndex] = '..';
