@@ -1,7 +1,7 @@
 import runGame from '../index.js';
 import randomInt from '../utils.js';
 
-const correctAnswerGeneration = (numOne, operation, numTwo) => {
+const answerCalculation = (numOne, operation, numTwo) => {
   switch (operation) {
     case '+':
       return numOne + numTwo;
@@ -20,7 +20,7 @@ const logicFormation = () => {
   const operatorsList = ['+', '-', '*'];
   const indexOfOperatorList = randomInt(0, operatorsList.length);
   const operator = operatorsList[indexOfOperatorList];
-  const correctAnswer = String(correctAnswerGeneration(firstNumber, operator, secondNumber));
+  const correctAnswer = String(answerCalculation(firstNumber, operator, secondNumber));
 
   const questionLine = `${firstNumber} ${operator} ${secondNumber}`;
 
