@@ -3,11 +3,15 @@ import randomInt from '../utils.js';
 
 const progressionLength = 10;
 
+const progressionStepCreate = () => randomInt(0, 20) - randomInt(0, 20);
+
+const startNumberCreate = () => randomInt(0, 20);
+
 const progressionGeneration = () => {
-  const progressionStep = randomInt(0, 20) - randomInt(0, 20);
-  const startNamber = randomInt(0, 20);
+  const startNumber = startNumberCreate();
+  const progressionStep = progressionStepCreate();
   const sequence = [];
-  for (let num = startNamber; sequence.length <= progressionLength; num += progressionStep) {
+  for (let num = startNumber; sequence.length <= progressionLength; num += progressionStep) {
     sequence.push(num);
   }
   return sequence;
