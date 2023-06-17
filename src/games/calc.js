@@ -14,7 +14,7 @@ const answerCalculation = (numOne, operation, numTwo) => {
   }
 };
 
-const logicFormation = () => {
+const getRoundData = () => {
   const firstNumber = randomInt(0, 10);
   const secondNumber = randomInt(0, 10);
   const operatorsList = ['+', '-', '*'];
@@ -30,5 +30,5 @@ const logicFormation = () => {
 const rules = 'What is the result of the expression?';
 
 export default () => {
-  runGame(logicFormation, rules);
+  runGame(getRoundData, rules);
 };

@@ -11,7 +11,7 @@ const generateProgression = (firstNum, step) => {
   return sequence;
 };
 
-const logicFormation = () => {
+const getRoundData = () => {
   const progressionStep = randomInt(0, 20) - randomInt(0, 20);
   const startNumber = randomInt(0, 20);
   const gameSequence = generateProgression(startNumber, progressionStep);
@@ -26,5 +26,5 @@ const logicFormation = () => {
 const rules = 'What number is missing in the progression?';
 
 export default () => {
-  runGame(logicFormation, rules);
+  runGame(getRoundData, rules);
 };

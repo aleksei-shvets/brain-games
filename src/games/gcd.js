@@ -3,7 +3,7 @@ import randomInt from '../utils.js';
 
 const gcdFinding = (numOne, numTwo) => (numTwo ? gcdFinding(numTwo, numOne % numTwo) : numOne);
 
-const logicFormation = () => {
+const getRoundData = () => {
   const firstNumber = randomInt(1, 60);
   const secondNumber = randomInt(1, 60);
 
@@ -17,5 +17,5 @@ const logicFormation = () => {
 const rules = 'Find the greatest common divisor of given numbers.';
 
 export default () => {
-  runGame(logicFormation, rules);
+  runGame(getRoundData, rules);
 };
