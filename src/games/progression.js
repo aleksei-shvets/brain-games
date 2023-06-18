@@ -12,7 +12,7 @@ const generateProgression = (firstNum, step) => {
 };
 
 const getRoundData = () => {
-  const progressionStep = randomInt(0, 20) - randomInt(0, 20);
+  const progressionStep = randomInt(0, 20);
   const startNumber = randomInt(0, 20);
   const gameSequence = generateProgression(startNumber, progressionStep);
   const missingNumderIndex = randomInt(0, gameSequence.length);
