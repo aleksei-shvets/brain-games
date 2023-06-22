@@ -12,13 +12,12 @@ export default (logicGenerator, rules) => {
   for (let i = 0; i < roundsCount; i += 1) {
     const [questionLine, correctAnswer] = logicGenerator();
     const answer = readlineSync.question(`Question: ${questionLine} \nYour answer: `);
-    if (answer === correctAnswer) {
-      console.log('Correct!');
-    } else {
+    if (answer !== correctAnswer) {
       console.log(`${answer} is wrong answer ;(. Correct answer was ${correctAnswer}.`);
       console.log(`Let's try again, ${userName}!`);
       return;
     }
+    console.log('Correct!');
   }
   console.log(`Congratulations, ${userName}!`);
 };
